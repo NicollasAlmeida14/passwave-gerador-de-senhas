@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassWave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Favicon-PassWave.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/Logo-PassWave-600.png" alt="logo-pass-wave">
+        <h1>Chega de senhas simples e previsíveis!</h1>
+    </header>
+
+    <main>
+        <section class="user-password-area">
+            <h2>Veja sua senha aqui</h2>
+
+            <div class="show-password-area">
+
+                <img class="container-img" src="assets/Logo-PassWave-600.png" alt="">
+
+                <div id="input-container" class="hidden">
+                    <input id="show-password-input"  type="text" readonly>
+                    <i id="copy-password" class="fa-solid fa-copy"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="personalize-password-area">
+            <h2>Personalize sua senha</h2>
+
+            <label>
+                Quantidade de caracteres
+                <select id="password-size">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </label>
+
+            <div class="available-personalizations">
+                <label for="uppercase">
+                    Letras maiúsculas
+                    <input id="uppercase" name="uppercase" type="checkbox">
+                </label>
+
+                <label for="lowercase">
+                    Letras minúsculas
+                    <input id="lowercase" name="lowercase" type="checkbox">
+                </label>
+
+                <label for="number">
+                    Números
+                    <input id="number" name="number" type="checkbox">
+                </label>
+
+                <label for="special-character">
+                    Caracteres especiais
+                    <input id="special-character" name="special-character" type="checkbox">
+                </label>
+            </div>
+
+            <button id="generate-password-btn">Gerar senha</button>
+        </section>
+    </main>
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="scripts.js"></script>
+
+</html>
