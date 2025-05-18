@@ -196,7 +196,7 @@ button:active {
         padding: 5px;
         border: none;
     }
-    
+
 
     .show-password-area {
         flex-direction: column;
@@ -205,7 +205,6 @@ button:active {
     .personalize-password-area {
         height: fit-content;
         padding: 10px;
-        /* border: none; */
     }
 
     select {
